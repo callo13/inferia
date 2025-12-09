@@ -22,7 +22,7 @@ const Hero = () => {
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-radial from-lime-500/10 via-transparent to-transparent"></div>
 
-      <div className="relative z-10 w-full max-w-6xl mx-auto text-left">
+      <div className="relative z-10 w-full max-w-6xl mx-auto text-center">
         {/* Title */}
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
@@ -39,7 +39,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-base sm:text-lg md:text-xl text-gray-400 mt-4 sm:mt-6 max-w-2xl leading-relaxed"
+          className="text-base sm:text-lg md:text-xl text-gray-400 mt-4 sm:mt-6 max-w-2xl mx-auto leading-relaxed"
         >
           Plateforme tout-en-un pour concevoir, développer et lancer vos produits avec l'intelligence artificielle
         </motion.p>
