@@ -17,8 +17,11 @@ export default function TiltedCard({
   const rotateX = useSpring(useMotionValue(0), springValues);
   const rotateY = useSpring(useMotionValue(0), springValues);
   const scale = useSpring(1, springValues);
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
 
   const [lastY, setLastY] = useState(0);
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   function handleMouse(e) {
     if (!ref.current) return;
@@ -32,6 +35,13 @@ export default function TiltedCard({
 
     rotateX.set(rotationX);
     rotateY.set(rotationY);
+
+    // Position du spotlight qui suit la souris
+    const mouseX = e.clientX - rect.left;
+    const mouseY = e.clientY - rect.top;
+    x.set(mouseX);
+    y.set(mouseY);
+    setMousePosition({ x: mouseX, y: mouseY });
 
     const velocityY = offsetY - lastY;
     setLastY(offsetY);
@@ -64,6 +74,13 @@ export default function TiltedCard({
         }}
       >
         {children}
+        {/* Spotlight lime qui suit la souris - au-dessus du contenu */}
+        <div
+          className="pointer-events-none absolute inset-0 rounded-3xl overflow-hidden z-20"
+          style={{
+            background: `radial-gradient(400px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(190, 242, 100, 0.3), transparent 50%)`
+          }}
+        />
       </motion.div>
     </div>
   );
