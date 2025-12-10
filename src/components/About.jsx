@@ -25,10 +25,14 @@ const About = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-lg text-gray-400 leading-relaxed"
         >
-          INFERIA est une agence spécialisée dans l'automatisation intelligente pour les PME.
-          Nous transformons vos processus métier en workflows automatisés performants, vous
-          permettant de gagner en efficacité et de vous concentrer sur l'essentiel : la croissance
-          de votre entreprise.
+          Après plus de six ans à automatiser, optimiser et résoudre des problèmes pour des environnements exigeants comme Naval Group, Airbus et la DGA, j’ai voulu mettre cette expertise au service des PME et TPE là où l’impact est immédiat.<br></br>
+          Sur ces projets, j’ai appris une chose : les entreprises ne manquent pas d’outils, elles manquent de solutions simples qui font vraiment gagner du temps.<br></br>
+          Aujourd’hui, avec Inferia, j’aide les petites et moyennes structures à utiliser l’IA de façon pragmatique, rapide et rentable.<br></br>
+          Mon approche est directe :<br></br>
+          Je repère ce qui vous ralentit, j’automatise ce qui peut l’être, et je construis des solutions qui vous économisent du temps, réduisent vos coûts et améliorent vos performances .<br></br>
+          Pas de jargon.<br></br>
+          Pas de complexité inutile.<br></br>
+          Juste de l’efficacité concrète et des résultats visibles.
         </motion.p>
       </div>
     </section>
