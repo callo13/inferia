@@ -8,7 +8,7 @@ const CTA = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section className="pt-8 pb-16 relative overflow-hidden">
+    <section className="py-16 relative overflow-hidden">
       <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
         <motion.div
           ref={ref}

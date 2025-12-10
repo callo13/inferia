@@ -7,7 +7,7 @@ const About = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="about" className="py-16 relative overflow-hidden">
+    <section id="about" className="pt-8 pb-16 relative overflow-hidden">
       <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
         <motion.h2
           ref={ref}

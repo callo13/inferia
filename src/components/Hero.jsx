@@ -9,7 +9,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="relative flex items-center justify-center px-4 sm:px-6 overflow-hidden pt-24 pb-8 sm:pt-32 sm:pb-12 md:min-h-screen">
+    <section id="hero" className="relative flex items-center justify-center px-4 sm:px-6 overflow-hidden pt-24 pb-8 sm:pt-32 md:min-h-screen">
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-radial from-lime-500/10 via-transparent to-transparent"></div>
 
