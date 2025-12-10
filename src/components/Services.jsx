@@ -138,7 +138,7 @@ const Services = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="services" className="py-24">
+    <section id="services" className="pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-6">
         <motion.h2
           ref={ref}

@@ -8,10 +8,7 @@ const CTA = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section className="py-24 bg-black relative overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-lime-500/5 via-transparent to-transparent"></div>
-
+    <section className="pt-8 pb-16 relative overflow-hidden">
       <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
         <motion.div
           ref={ref}

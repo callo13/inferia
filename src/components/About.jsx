@@ -7,10 +7,7 @@ const About = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="about" className="py-24 bg-zinc-950 relative overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-lime-500/5 via-transparent to-transparent"></div>
-
+    <section id="about" className="py-16 relative overflow-hidden">
       <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
         <motion.h2
           ref={ref}
