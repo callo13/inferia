@@ -10,7 +10,7 @@ const services = [
     number: "01",
     title: "Automatisation de workflows",
     subtitle: "Processus intelligents & sans friction",
-    description: "Automatisation sur-mesure des processus métier (gestion de leads, tâches récurrentes, back-office…) afin d’éliminer les tâches répétitives et améliorer la performance opérationnelle",
+    description: "Automatisation sur-mesure des processus métier afin d’éliminer les tâches répétitives et améliorer la performance opérationnelle",
     features: [
       "Workflows n8n personnalisés",
       "Intégrations illimitées",
