@@ -8,21 +8,21 @@ const services = [
   {
     icon: Bot,
     number: "01",
-    title: "Automatisation LinkedIn",
-    subtitle: "CONTENU INTELLIGENT ET AUTOMATISÉ",
-    description: "Génération de contenu et publication automatique pour booster votre présence",
+    title: "Automatisation de workflows",
+    subtitle: "Processus intelligents & sans friction",
+    description: "Automatisation sur-mesure des processus métier (gestion de leads, tâches récurrentes, back-office…) afin d’éliminer les tâches répétitives et améliorer la performance opérationnelle",
     features: [
-      "Création de posts engageants",
-      "Publication programmée",
-      "Analyse de performance"
+      "Workflows n8n personnalisés",
+      "Intégrations illimitées",
+      "Exécution fiable & scalable"
     ]
   },
   {
     icon: Phone,
     number: "02",
-    title: "Voice AI",
-    subtitle: "ASSISTANT VOCAL INTELLIGENT",
-    description: "Systèmes de commande vocale intelligents pour restaurants et commerces",
+    title: "Chatbots & Agents conversationnels",
+    subtitle: "Support intelligent, formé à votre business",
+    description: "Mise en place de chatbots et agents IA entraînés sur vos documents, process, FAQ et connaissances internes, offrant des réponses naturelles 24/7",
     features: [
       "Réponses naturelles 24/7",
       "Traitement multilingue",
@@ -32,9 +32,9 @@ const services = [
   {
     icon: Workflow,
     number: "03",
-    title: "Workflows n8n",
-    subtitle: "AUTOMATISATION PERSONNALISÉE",
-    description: "Automatisation sur-mesure de vos processus métier avec n8n",
+    title: "Génération de contenu assistée par IA",
+    subtitle: "Contenu automatisé & cohérent",
+    description: "Automatisation de la création de posts LinkedIn, newsletters, scripts, descriptions produits ou emails afin de maintenir une communication régulière et impactante.",
     features: [
       "Workflows sur-mesure",
       "Connecteurs illimités",
@@ -44,24 +44,24 @@ const services = [
   {
     icon: Plug,
     number: "04",
-    title: "Intégrations API",
-    subtitle: "CONNEXION TRANSPARENTE",
-    description: "Connexion fluide entre vos outils et plateformes existants",
+    title: "Extraction & analyse de données",
+    subtitle: "Data utile, exploitable & automatisée",
+    description: "Extraction de données, traitement intelligent de documents et réalisation de dashboards automatisés permettant une prise de décision rapide et éclairée ",
     features: [
       "APIs sécurisées",
       "Synchronisation en temps réel",
-      "Documentation complète"
+      "Tableaux de bord automatisés"
     ]
   },
   {
     icon: MessageSquare,
     number: "05",
-    title: "Chatbots IA",
-    subtitle: "SUPPORT CLIENT INTELLIGENT",
-    description: "Assistants conversationnels intelligents pour votre support client",
+    title: "Assistants IA métier personnalisés",
+    subtitle: "L’IA qui connaît votre métier",
+    description: "Conception d’assistants IA spécialisés (RAG, base de connaissances, outils internes) capables d’exécuter des tâches métier complexes et adaptées à votre organisation",
     features: [
-      "Compréhension contextuelle",
-      "Réponses instantanées",
+      "Architecture adaptée",
+      "Compréhension métier approfondie",
       "Évolution continue"
     ]
   },
