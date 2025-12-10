@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Bot, Phone, Workflow, Plug, MessageSquare, Sparkles } from 'lucide-react';
+import TiltedCard from './TiltedCard';
 
 const services = [
   {
@@ -89,13 +90,14 @@ const ServiceCard = ({ service, index }) => {
       initial={{ opacity: 0, y: 30 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
-      className="relative bg-gradient-to-br from-zinc-900 via-zinc-900 to-black border border-lime-500/20 rounded-3xl p-8 hover:border-lime-500/50 hover:shadow-lg hover:shadow-lime-500/10 transition-all duration-300 overflow-hidden group"
     >
-      {/* Background gradient effect */}
-      <div className="absolute inset-0 bg-gradient-to-br from-lime-500/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      <TiltedCard scaleOnHover={1.05} rotateAmplitude={8}>
+        <div className="relative bg-gradient-to-br from-zinc-900 via-zinc-900 to-black border border-lime-500/20 rounded-3xl p-8 hover:border-lime-500/50 hover:shadow-lg hover:shadow-lime-500/10 transition-all duration-300 overflow-hidden group h-full">
+          {/* Background gradient effect */}
+          <div className="absolute inset-0 bg-gradient-to-br from-lime-500/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
-      {/* Content */}
-      <div className="relative z-10">
+          {/* Content */}
+          <div className="relative z-10">
         {/* Icon container with background */}
         <div className="w-16 h-16 bg-lime-500/10 rounded-xl flex items-center justify-center mb-6 border border-lime-500/20">
           <Icon className="text-lime-500 w-8 h-8" />
@@ -128,7 +130,9 @@ const ServiceCard = ({ service, index }) => {
             </li>
           ))}
         </ul>
-      </div>
+          </div>
+        </div>
+      </TiltedCard>
     </motion.div>
   );
 };
