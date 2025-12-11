@@ -41,9 +41,16 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
           onClick={scrollToFooter}
-          className="mt-6 sm:mt-8 bg-lime-500 text-black font-semibold text-base sm:text-lg rounded-full px-8 sm:px-10 py-3 sm:py-4 hover:scale-105 transition-transform duration-300 inline-block"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="mt-6 sm:mt-8 bg-lime-500 text-black font-semibold text-base sm:text-lg rounded-full px-8 sm:px-10 py-3 sm:py-4 transition-all duration-300 inline-block relative overflow-hidden group"
         >
-          Démarrer maintenant
+          {/* Effet shimmer au hover */}
+          <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-700" />
+          <span className="relative z-10">Démarrer maintenant</span>
+
+          {/* Glow effect */}
+          <span className="absolute inset-0 rounded-full bg-lime-400 blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-300" />
         </motion.button>
       </div>
     </section>

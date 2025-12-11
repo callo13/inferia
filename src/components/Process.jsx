@@ -146,9 +146,18 @@ const Process = () => {
           <p className="text-gray-400 mb-6">
             Prêt à démarrer votre transformation ?
           </p>
-          <button className="bg-lime-500 text-black font-bold text-lg rounded-full px-10 py-4 hover:bg-lime-400 hover:scale-105 transition-all duration-300 inline-block">
-            Lancer votre projet
-          </button>
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-lime-500 text-black font-bold text-lg rounded-full px-10 py-4 transition-all duration-300 inline-block relative overflow-hidden group"
+          >
+            {/* Effet shimmer au hover */}
+            <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-700" />
+            <span className="relative z-10">Lancer votre projet</span>
+
+            {/* Glow effect */}
+            <span className="absolute inset-0 rounded-full bg-lime-400 blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-300" />
+          </motion.button>
         </motion.div>
       </div>
     </section>
