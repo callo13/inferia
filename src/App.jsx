@@ -30,6 +30,8 @@ function App() {
         <Header />
         <Hero />
         <About />
+        <StatsSection />
+        <Process />
         <Services />
         <CTA />
         <Footer />
