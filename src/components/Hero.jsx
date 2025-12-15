@@ -19,10 +19,10 @@ const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-[1.1]"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black leading-[1.1]"
         >
-          <span className="text-white block">INFERIA construit votre</span>
-          <span className="text-lime-500 block">besoin, de A à Z</span>
+          <span className="text-white block">L'agence pragmatique qui fait gagner du temps</span>
+          <span className="text-lime-500 block">aux PME grâce à l’IA et l'automatisation</span>
         </motion.h1>
 
         {/* Subtitle */}
@@ -32,7 +32,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-base sm:text-lg md:text-xl text-gray-400 mt-4 sm:mt-6 max-w-2xl mx-auto leading-relaxed"
         >
-          L'agence pragmatique qui fait gagner du temps aux PME grâce à l’IA et l'automatisation
+          INFERIA construit votre besoin de A a Z
         </motion.p>
 
         {/* CTA Button */}
