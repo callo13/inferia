@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Calendar } from 'lucide-react';
+import { Calendar, Mail, Phone } from 'lucide-react';
 
 const CTA = () => {
   const ref = useRef(null);
@@ -37,6 +37,37 @@ const CTA = () => {
           >
             Réserver un appel gratuit
           </motion.a>
+
+          {/* Section de contact alternatif */}
+          <div className="mt-12 pt-12 border-t border-zinc-800">
+            <p className="text-gray-400 text-lg mb-6">
+              Une question ? Besoin d'une info avant de réserver votre appel ?
+            </p>
+
+            <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
+              {/* Email */}
+              <a
+                href="mailto:contact@inferia.com"
+                className="flex items-center gap-3 text-gray-300 hover:text-lime-500 transition-colors duration-300 group"
+              >
+                <div className="p-3 rounded-full bg-zinc-900 group-hover:bg-lime-500/10 transition-colors duration-300">
+                  <Mail className="w-5 h-5" />
+                </div>
+                <span className="text-base md:text-lg">contact@inferia.com</span>
+              </a>
+
+              {/* Téléphone */}
+              <a
+                href="tel:+33123456789"
+                className="flex items-center gap-3 text-gray-300 hover:text-lime-500 transition-colors duration-300 group"
+              >
+                <div className="p-3 rounded-full bg-zinc-900 group-hover:bg-lime-500/10 transition-colors duration-300">
+                  <Phone className="w-5 h-5" />
+                </div>
+                <span className="text-base md:text-lg">+33 6 99 06 12 41</span>
+              </a>
+            </div>
+          </div>
         </motion.div>
       </div>
     </section>

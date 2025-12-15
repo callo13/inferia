@@ -17,7 +17,7 @@ const About = () => {
           transition={{ duration: 0.6 }}
           className="text-5xl font-bold text-white mb-12 text-center"
         >
-          A propos
+          À propos
         </motion.h2>
 
         {/* Contenu avec photo à gauche et texte à droite */}
