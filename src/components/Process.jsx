@@ -106,7 +106,7 @@ const Process = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section className="py-16 relative overflow-hidden">
+    <section id="process" className="py-16 relative overflow-hidden">
       <div className="max-w-5xl mx-auto px-6 relative z-10">
         {/* En-tête */}
         <motion.div
