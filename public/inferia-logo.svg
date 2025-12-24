@@ -1,0 +1,70 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Définitions des filtres et effets -->
+  <defs>
+    <!-- Filtre de lueur néon -->
+    <filter id="neon-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur1"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur2"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur3"/>
+      <feMerge>
+        <feMergeNode in="blur3"/>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Gradient néon lime -->
+    <linearGradient id="lime-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:hsl(85, 85%, 70%);stop-opacity:1" />
+      <stop offset="50%" style="stop-color:hsl(85, 85%, 60%);stop-opacity:1" />
+      <stop offset="100%" style="stop-color:hsl(85, 80%, 55%);stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Gradient pour la lueur externe -->
+    <radialGradient id="outer-glow">
+      <stop offset="0%" style="stop-color:hsl(85, 85%, 60%);stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:hsl(85, 85%, 60%);stop-opacity:0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Cercle de lueur externe -->
+  <circle cx="100" cy="100" r="80" fill="url(#outer-glow)" opacity="0.6"/>
+
+  <!-- Forme du I avec design moderne et géométrique -->
+  <g filter="url(#neon-glow)">
+    <!-- Barre verticale principale du I -->
+    <rect x="85" y="40" width="30" height="120" fill="url(#lime-gradient)" rx="4"/>
+
+    <!-- Barre horizontale supérieure -->
+    <rect x="70" y="40" width="60" height="15" fill="url(#lime-gradient)" rx="4"/>
+
+    <!-- Barre horizontale inférieure -->
+    <rect x="70" y="145" width="60" height="15" fill="url(#lime-gradient)" rx="4"/>
+
+    <!-- Détails géométriques - accents angulaires -->
+    <path d="M 85 60 L 90 40 L 95 60 Z" fill="hsl(85, 90%, 75%)" opacity="0.8"/>
+    <path d="M 105 60 L 110 40 L 115 60 Z" fill="hsl(85, 90%, 75%)" opacity="0.8"/>
+
+    <!-- Point d'accentuation en bas -->
+    <circle cx="100" cy="135" r="6" fill="hsl(85, 90%, 75%)"/>
+
+    <!-- Lignes d'accent latérales pour un effet tech -->
+    <line x1="75" y1="100" x2="68" y2="100" stroke="url(#lime-gradient)" stroke-width="2" opacity="0.7"/>
+    <line x1="125" y1="100" x2="132" y2="100" stroke="url(#lime-gradient)" stroke-width="2" opacity="0.7"/>
+  </g>
+
+  <!-- Particules d'effet néon autour -->
+  <circle cx="65" cy="70" r="2" fill="hsl(85, 90%, 70%)" opacity="0.6">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="135" cy="80" r="2" fill="hsl(85, 90%, 70%)" opacity="0.6">
+    <animate attributeName="opacity" values="0.4;0.9;0.4" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="70" cy="130" r="2" fill="hsl(85, 90%, 70%)" opacity="0.6">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="130" cy="140" r="2" fill="hsl(85, 90%, 70%)" opacity="0.6">
+    <animate attributeName="opacity" values="0.3;0.7;0.3" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+</svg>
