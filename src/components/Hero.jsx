@@ -32,7 +32,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-base sm:text-lg md:text-xl text-gray-400 mt-4 sm:mt-6 max-w-2xl mx-auto leading-relaxed"
         >
-          INFERIA construit votre besoin de A a Z
+          INFERIA construit votre solution de A a Z
         </motion.p>
 
         {/* CTA Button */}
