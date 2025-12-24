@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Linkedin, Twitter, Github } from 'lucide-react';
+import { Linkedin } from 'lucide-react';
 
 const Footer = () => {
   const scrollToSection = (id) => {
@@ -30,6 +30,18 @@ const Footer = () => {
                 Home
               </button>
               <button
+                onClick={() => scrollToSection('about')}
+                className="text-gray-400 hover:text-lime-500 transition-colors duration-300 text-left"
+              >
+                À propos
+              </button>
+              <button
+                onClick={() => scrollToSection('process')}
+                className="text-gray-400 hover:text-lime-500 transition-colors duration-300 text-left"
+              >
+                Processus
+              </button>
+              <button
                 onClick={() => scrollToSection('services')}
                 className="text-gray-400 hover:text-lime-500 transition-colors duration-300 text-left"
               >
@@ -49,25 +61,13 @@ const Footer = () => {
             <h4 className="text-lg font-semibold text-white mb-4">Suivez-nous</h4>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://www.linkedin.com/company/inferia-auto"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-400 hover:text-lime-500 transition-colors duration-300"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-6 h-6" />
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-lime-500 transition-colors duration-300"
-                aria-label="Twitter"
-              >
-                <Twitter className="w-6 h-6" />
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-lime-500 transition-colors duration-300"
-                aria-label="GitHub"
-              >
-                <Github className="w-6 h-6" />
               </a>
             </div>
           </div>
