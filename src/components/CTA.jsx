@@ -28,7 +28,7 @@ const CTA = () => {
           </p>
 
           <motion.a
-            href="https://calendly.com/votre-lien" // Remplacer par votre lien Calendly
+            href="https://calendly.com/inferia-contact/30min" // Remplacer par votre lien Calendly
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
