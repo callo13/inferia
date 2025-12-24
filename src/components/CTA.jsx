@@ -47,13 +47,13 @@ const CTA = () => {
             <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
               {/* Email */}
               <a
-                href="mailto:contact@inferia.com"
+                href="mailto:inferia.contact@gmail.com"
                 className="flex items-center gap-3 text-gray-300 hover:text-lime-500 transition-colors duration-300 group"
               >
                 <div className="p-3 rounded-full bg-zinc-900 group-hover:bg-lime-500/10 transition-colors duration-300">
                   <Mail className="w-5 h-5" />
                 </div>
-                <span className="text-base md:text-lg">contact@inferia.com</span>
+                <span className="text-base md:text-lg">inferia.contact@gmail.com</span>
               </a>
 
               {/* Téléphone */}
