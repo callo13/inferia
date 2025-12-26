@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 
 const Hero = () => {
-  const scrollToFooter = () => {
-    const element = document.getElementById('footer');
+  const scrollToCTA = () => {
+    const element = document.getElementById('cta');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -40,7 +40,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          onClick={scrollToFooter}
+          onClick={scrollToCTA}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="mt-6 sm:mt-8 bg-lime-500 text-black font-semibold text-base sm:text-lg rounded-full px-8 sm:px-10 py-3 sm:py-4 transition-all duration-300 inline-block relative overflow-hidden group"

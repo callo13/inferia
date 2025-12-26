@@ -59,7 +59,7 @@ const Header = () => {
 
             {/* Desktop CTA Button */}
             <button
-              onClick={() => scrollToSection('footer')}
+              onClick={() => scrollToSection('cta')}
               className="bg-lime-500 text-black font-semibold text-sm rounded-full px-6 py-2 hover:bg-lime-400 transition-all duration-300"
             >
               Contact
@@ -126,7 +126,7 @@ const Header = () => {
               Services
             </button>
             <button
-              onClick={() => scrollToSection('footer')}
+              onClick={() => scrollToSection('cta')}
               className="mt-2 bg-lime-500 text-black font-semibold rounded-full px-8 py-3 hover:scale-105 transition-transform duration-300 text-center"
             >
               Contact

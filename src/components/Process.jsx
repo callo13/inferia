@@ -105,6 +105,13 @@ const Process = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
+  const scrollToCTA = () => {
+    const element = document.getElementById('cta');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="process" className="py-16 relative overflow-hidden">
       <div className="max-w-5xl mx-auto px-6 relative z-10">
@@ -147,6 +154,7 @@ const Process = () => {
             Prêt à démarrer votre transformation ?
           </p>
           <motion.button
+            onClick={scrollToCTA}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="bg-lime-500 text-black font-bold text-lg rounded-full px-10 py-4 transition-all duration-300 inline-block relative overflow-hidden group"
